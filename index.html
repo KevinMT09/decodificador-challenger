@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="./decod/decod.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./img/data-protetor.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="./img/a.png" alt="logo_alura" class="logo" />
+    </header>
+    <main>
+      <section class="input_area">
+        <textarea
+          name="input-text"
+          class="input-text"
+          cols="39"
+          rows="4"
+          placeholder="Digite seu texto"
+        ></textarea>
+        <div class="main_alert_span">
+          <img src="/img/exclamacao.png" alt="exclamation" />
+          <span>Apenas letras minúsculas e sem acento.</span>
+        </div>
+        <div class="main__div__button">
+          <button class="button" id="btn-codificar" onclick="btnEncrypt()"> Criptografar</button>
+          <button class="button" id="btn-decodificar" onclick="btnDecrypt()"> Descriptografar</button>
+        </div>
+      </section>
+      <section class="main_apresentacao_message">
+        <img
+          src="/img/no-message-img.svg"
+          alt="no-message-img"
+          class="img"
+        />
+        <div class="area_msg">
+          <h2>Nenhuma mensagem encontrada</h2>
+          <p class="text_message">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+        <div class="output">
+          <textarea class="output-text" cols="20" rows="10"></textarea>
+          <button class="button" id="btn-copiar">Copiar</button>
+        </div>
+      </section>
+    </main>
+    <br />
+    <footer class="footer">
+      <div class="footer_class">
+        <p>
+          <span>&copy</span> Desenvolvido por Kevin
+        </p>
+      </div>
+      <div >
+      </div>
+    </footer>
+  </body>
+</html>
